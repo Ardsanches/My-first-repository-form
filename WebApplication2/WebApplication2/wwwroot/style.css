@@ -1,0 +1,49 @@
+﻿
+body {
+ 
+}
+
+main {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.label-form {
+    font-size: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    
+}
+
+form-test {
+    color: wheat;
+    background-color: cadetblue;
+    border-radius: 20px;
+    padding: 20px 80px;
+}
+
+.form-btn {
+    padding: 5px 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: right;
+    border: none;
+}
+
+.input-form {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+}
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    padding: 6px 11px;
+    background-color: lightgrey;
+}
