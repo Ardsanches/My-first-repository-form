@@ -10,11 +10,11 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Add DbContext
+// Add DbContext to use the SQL Server database connection
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Add CORS
+// Add CORS (only for local development or tests)
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll",
@@ -37,7 +37,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-// Use CORS
+// Use CORS configuration defined above
 app.UseCors("AllowAll");
 
 // Add static files support
