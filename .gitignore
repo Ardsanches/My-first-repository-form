@@ -1,0 +1,12 @@
+# Ignorar configurações de ambiente de desenvolvimento
+appsettings.json
+appsettings.Development.json
+launchSettings.json
+
+# Ignorar pastas e arquivos de compilação
+bin/
+obj/
+
+# Ignorar arquivos de usuário específicos
+*.user
+*.suo
