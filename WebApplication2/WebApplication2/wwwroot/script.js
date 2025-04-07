@@ -1,14 +1,17 @@
-﻿document.getElementById("userForm").addEventListener("submit", function (event) {
-    event.preventDefault(); // Impede o envio padrão do form
-    console.log("Formulário enviado!"); // Exibe no console
+document.addEventListener("DOMContentLoaded", function (event) {
+    document.getElementById("userForm").addEventListener("submit", function (event) {
+        event.preventDefault();
+        
 
-    const nome = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
+        const nome = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
 
-    const user = {
-        name: nome,
-        email: email
-    };
+        const user = {
+            name: nome,
+            email: email
+        };
 
-    console.log(user); // Exibe os dados do formulário
+        console.log(user); // show form results on console
+    }
+    );
 })
