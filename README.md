@@ -1,8 +1,8 @@
 # Simple Form with Full CRUD REST API
-This is my first full-stack project on GitHub, a simple frontend form connected to a RESTful backend API implementing full CRUD operations.
+This is my first project on GitHub, a simple frontend form connected to a RESTful backend API implementing full CRUD operations.
 
 **Tech**
-- Frontend: HTML/CSS/Javascript (basic form)
+- Frontend: HTML/CSS/Javascript/bootstrap
 - Backend: .NET Core Web API with Entity Framework
 - Database: SQL Server
 - Others: Swagger for API testing
