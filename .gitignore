@@ -10,3 +10,5 @@ obj/
 # Ignorar arquivos de usuário específicos
 *.user
 *.suo
+
+.vs/
