@@ -14,10 +14,10 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Add CORS (only for local development or tests)
+// Add CORS 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAll",
+    options.AddPolicy("AllowAll", //allowall only for local development or tests
         builder =>
         {
             builder.AllowAnyOrigin()

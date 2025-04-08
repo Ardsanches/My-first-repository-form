@@ -2,27 +2,39 @@
 <html>
 <head>
     <title>Formulário</title>
+    <!-- links -->
     <link href="/style.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
     <main>
+        <!-- Form container(Bootstrap) -->
         <div class="form-test">
             <form id="userForm" name="userForm">
-                <h1>Formulário</h1>
+                <h1 class="text-center">Formulário</h1>
 
-                <label class="label-form" for="name">Nome:</label>
-                <input id="name" class="input-form" type="text" name="Name" />
+                <div class="mb-3">
+                    <label class="label-form" for="name">Nome:</label>
+                    <input id="name" class="form-control" type="text" name="Name" />
+                </div>
 
-                <label class="label-form" for="email">Email:</label>
-                <input id="email" class="input-form" type="text" name="Email" />
+                <div class="mb-3">
+                    <label class="label-form" for="email">Email:</label>
+                    <input id="email" class="form-control" type="email" name="Email" />
+                </div>
 
-                <button id="btnEnviar" class="btn" type="submit">Enviar</button>
-
+                <button id="btnEnviar" class="btn btn-primary" type="submit">Enviar</button>
             </form>
+            <!-- confirmation container -->
+            <div id="confirmationMessage" class="alert alert-success mt-3" style="display: none;">
+                Dados enviados com sucesso!
+            </div>
         </div>
     </main>
-
+    <!-- Links again-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/script.js"></script>
 </body>
 </html>
